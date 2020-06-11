@@ -6,7 +6,7 @@ html {
 	font-size: 100%;
 }
 body{
-    font-family: sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: 300;
     margin: 0;
     padding: 0;   
@@ -25,7 +25,7 @@ body {
     color: rgb(50,81,99);
 }
 .header {
-    font-size: 120%;
+    font-size: 100%;
     height: 6vh;
     width: 90%;
     display: flex;
@@ -48,16 +48,20 @@ body {
     display: flex;
     flex-direction: row;
     padding-right: 1rem;
+    padding-top: .4rem;
 }
 .select_city::before {
 	content: "📍";
 	font-style: normal;
 	color: transparent;  
     text-shadow: 0 0 0 rgb(133, 125, 242);
+    padding-right: .4rem;
 }
 .select_city_arrowhead {
     padding-left: .4rem;
     color: rgb(133, 125, 242);
+    font-size: 140%;
+    font-weight: 700;
 }
 .create_event {
     padding-left: 1rem;
@@ -71,13 +75,140 @@ body {
     padding: .6rem;
     padding-left: .8rem;
     padding-right: .8rem;
-    border-radius: .3rem;
+    border-radius: .4rem;
 }
 #profile_pic {
     width: 2.2rem;
     border-radius: 2rem;
 }
+.content {
+    padding-top: 5rem;
+    width: 50%;
+}
 .content_title {
     font-weight: bold;
-    font-size: 250%;
+    font-size: 280%;
+    padding-bottom: 3rem;
+    text-align: center;
+}
+.content_subtitle {
+    padding-bottom: 1rem;
+}
+.content_form {
+    background-color: white;
+    height: auto;
+    border-radius: .6rem;
+    padding: 2.4rem;
+}
+.content_form_and_title {
+    padding-top: 1.4rem;
+    padding-bottom: 1.4rem;
+}
+.pp_upload {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 1rem;
+    padding-bottom: .8rem;
+}
+#profile_pic_form {
+    width: 3rem;
+    border-radius: 2rem;
+}
+.form_input_btn{
+    background-color: rgb(133, 125, 242);
+    text-decoration:none;
+    border: none;
+    color: white;
+    padding: .6rem;
+    padding-left: .8rem;
+    padding-right: .8rem;
+    border-radius: .4rem;
+    margin-left: 1rem;
+}
+.form_input_btn_delete {
+    background-color: white;
+    text-decoration:none;
+    border: none;
+    color: rgb(133, 125, 242);
+    border: solid rgb(133, 125, 242) 1px;
+    padding: .6rem;
+    padding-left: .8rem;
+    padding-right: .8rem;
+    border-radius: .4rem;
+    margin-left: 1rem;
+}
+.name_form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.name_form_row {
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+}
+.form_row {
+    display: flex;
+    flex-direction: column;
+}
+.form_input {
+    padding: .6rem;
+    border-radius: .4rem;
+    border: solid rgb(230, 230, 230) 1px;
+}
+.form_label {
+    padding-top: .8rem;
+    padding-bottom: .8rem;
+}
+.form_label_first {
+    padding-bottom: .8rem;
+}
+.submit {
+    margin-top: 1rem;
+    text-align: end;
+}
+.submit_btn {
+    background-color: rgb(133, 125, 242);
+    text-decoration:none;
+    border: none;
+    color: white;
+    font-size: 105%;
+    padding: .8rem;
+    padding-left: 1.4rem;
+    padding-right: 1.4rem;
+    border-radius: .4rem;
+}
+@media screen and (max-width: 667px) {
+    .content {
+        padding-top: 2rem;
+        width: 90%;
+    }
+    .content_title {
+        padding-bottom: 1.6rem;
+    }
+    .header {
+        font-size: 80%;
+    }
+    .submit_btn {
+        font-size: 90%;
+    }
+    .create_event {
+        display: none;
+    }
+    .profile_img {
+        display: none;
+    }
+    .header_without_logo {
+        padding-top: 0;
+    }
+    .form_input_btn {
+        font-size: 90%;
+    }
+    .form_input_btn_delete {
+        font-size: 80%;
+    }
+    .content_form {
+        padding: 1.2rem;
+    }
 }

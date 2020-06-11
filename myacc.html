@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Account</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -17,7 +18,8 @@
                     SELECT CITY
                 </div>
                 <div class="select_city_arrowhead">
-                    &#8964;
+                    <!-- &#8964; -->
+                    v
                 </div>
             </div>
             <div class="create_event">
@@ -34,14 +36,72 @@
         <div class="content_title">
             My Account
         </div>
-        <div class="content_subtitle">
-            PROFILE
+        <div class="content_form_and_title">
+            <div class="content_subtitle">
+                PROFILE
+            </div>
+            <div class="content_form">
+                <form>
+                    <div class="profile_picture">
+                        <div class="form_profile_pic">
+                            <div class="pp_upload_title">
+                                <label for="profile_imgage" class="form_pp_img">Profile Picture</label>
+                            </div>
+                            <div class="pp_upload">
+                                <img src="/img/pp.png" id="profile_pic_form">
+                                <button type="" name="pp" class="form_input_btn">Upload New Picture</button>
+                                <button type="" name="pp" class="form_input_btn_delete">Delete</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="name_form">
+                        <div class="name_form_row">
+                            <label for="first_name" class="form_label">First Name *</label>
+                            <input type="text" name="fname" class="form_input"></input>
+                        </div>
+                        <div class="name_form_row">
+                            <label for="first_name" class="form_label">Last Name *</label>
+                            <input type="text" name="fname" class="form_input"></input>
+                        </div>
+                    </div>
+                    <div class="form_row">
+                        <label for="email" class="form_label">Email *</label>
+                        <input type="email" name="email" class="form_input"></input>
+                    </div>
+                    <div class="form_row">
+                        <label for="location" class="form_label">Location</label>
+                        <input type="text" name="location" class="form_input"></input>
+                    </div>
+                    <div class="submit">
+                        <input type="submit" value="Save Changes" class="submit_btn">
+                    </div>
+                </form>
+            </div>
         </div>
-        <div class="content_form"></div>
-        <div class="content_subtitle">
-            CHANGE PASSWORD
+        <div class="content_form_and_title">
+            <div class="content_subtitle">
+                CHANGE PASSWORD
+            </div>
+            <div class="content_form">
+                <form>
+                    <div class="form_row">
+                        <label for="location" class="form_label_first">Current Password *</label>
+                        <input type="text" name="location" class="form_input"></input>
+                    </div>
+                    <div class="form_row">
+                        <label for="location" class="form_label">New Password *</label>
+                        <input type="text" name="location" class="form_input"></input>
+                    </div>
+                    <div class="form_row">
+                        <label for="location" class="form_label">Confirm New Password *</label>
+                        <input type="text" name="location" class="form_input"></input>
+                    </div>
+                    <div class="submit">
+                        <input type="submit" value="Change Password" class="submit_btn">
+                    </div>
+                </form>
+            </div>
         </div>
-        <div class="content_form"></div>
     </div>
     <div class="footer">
         <div class="about_contact"></div>
@@ -52,7 +112,6 @@
             <div class="youtube"></div>
         </div>
     </div>
-    TEST
 </body>
 
 </html>
