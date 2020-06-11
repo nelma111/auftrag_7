@@ -1,0 +1,83 @@
+/* RESET DEFAULTS */
+* {
+	box-sizing: content-box;
+}
+html {
+	font-size: 100%;
+}
+body{
+    font-family: sans-serif;
+    font-weight: 300;
+    margin: 0;
+    padding: 0;   
+    display: flex;
+    flex-direction: column;   
+    align-items: center;
+    justify-content: center;
+}
+a {
+    text-decoration: none;
+    line-height: 2rem;
+}
+/* CUSTOM CSS */
+body {
+    background-color: rgb(249, 249, 249);
+    color: rgb(50,81,99);
+}
+.header {
+    font-size: 120%;
+    height: 6vh;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: solid rgb(235, 235, 235) 2px;
+}
+.header_without_logo {
+    display: flex;
+    flex-direction: row;
+    padding-top: .8rem;
+}
+.logo {
+    font-size: 140%;
+    font-weight: bold;
+}
+.select_city {
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    padding-right: 1rem;
+}
+.select_city::before {
+	content: "📍";
+	font-style: normal;
+	color: transparent;  
+    text-shadow: 0 0 0 rgb(133, 125, 242);
+}
+.select_city_arrowhead {
+    padding-left: .4rem;
+    color: rgb(133, 125, 242);
+}
+.create_event {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.create_event_btn {
+    background-color: rgb(133, 125, 242);
+    text-decoration:none;
+    border: none;
+    color: white;
+    padding: .6rem;
+    padding-left: .8rem;
+    padding-right: .8rem;
+    border-radius: .3rem;
+}
+#profile_pic {
+    width: 2.2rem;
+    border-radius: 2rem;
+}
+.content_title {
+    font-weight: bold;
+    font-size: 250%;
+}
