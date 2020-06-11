@@ -57,6 +57,22 @@ body {
     text-shadow: 0 0 0 rgb(133, 125, 242);
     padding-right: .4rem;
 }
+
+.location {
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    padding-right: 1rem;
+    padding-top: .4rem;
+}
+.location::before {
+	content: "📍";
+	font-style: normal;
+	color: transparent;  
+    text-shadow: 0 0 0 rgb(133, 125, 242);
+    padding-right: .4rem;
+}
+
 .select_city_arrowhead {
     padding-left: .4rem;
     color: rgb(133, 125, 242);
@@ -76,6 +92,25 @@ body {
     padding-left: .8rem;
     padding-right: .8rem;
     border-radius: .4rem;
+}
+.sign_in_btn {
+    background-color: white;
+    text-decoration:none;
+    border: none;
+    color: rgb(133, 125, 242);
+    border: solid rgb(133, 125, 242) 1px;
+    padding: .6rem;
+    padding-left: .8rem;
+    padding-right: .8rem;
+    border-radius: .4rem;
+    margin-left: 1rem;
+}
+.sign_in_btn::before {
+	content: "👨‍💼";
+	font-style: normal;
+	color: transparent;  
+    text-shadow: 0 0 0 rgb(133, 125, 242);
+    padding-right: .4rem;
 }
 #profile_pic {
     width: 2.2rem;
@@ -143,11 +178,6 @@ body {
     flex-direction: row;
     justify-content: space-between;
 }
-.name_form_row {
-    display: flex;
-    flex-direction: column;
-    width: 48%;
-}
 .form_row {
     display: flex;
     flex-direction: column;
@@ -178,6 +208,57 @@ body {
     padding-left: 1.4rem;
     padding-right: 1.4rem;
     border-radius: .4rem;
+}
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    height: 8vh;
+    width: 100%;
+    background-color: white;
+    font-size: 140%;
+    position: absolute;
+    bottom: 0;
+}
+.about_contact {
+    display: flex;
+    flex-direction: row;
+    padding-left: 6rem;
+    padding-right: 6rem;
+}
+.contact {
+    padding-left: 4rem;
+}
+.socialmedia {
+    display: flex;
+    flex-direction: row;
+    padding-right: 6rem;
+    margin-left: auto;
+}
+.socialmedia_link {
+    padding-left: 2rem;
+}
+.event_time {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: auto;
+}
+.name_form_row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+.event_start {
+    width: 48%;
+}
+.event_end {
+    width: 48%;
+}
+.form_input_event {
+    width: 40%;
 }
 @media screen and (max-width: 667px) {
     .content {
