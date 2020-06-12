@@ -295,6 +295,10 @@ textarea {
         padding-right: 0;
         margin-left: auto;
     }
+    .footer_event {
+        position: static;
+        bottom: 0;
+    }
 }
 @media only screen and (max-width:500px) {
     .content {
@@ -357,9 +361,5 @@ textarea {
     }
     .form_input_event {
         width: 40%;
-    }
-    .footer_event {
-        position: static;
-        bottom: 0;
     }
 }
