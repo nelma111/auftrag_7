@@ -8,6 +8,10 @@
     https://codepen.io/gyros/pen/gOPrKQr?editors=1100
 
 - Selectornamen in CSS file überarbeiten
+    http://getbem.com/introduction/
+
+- Sektionen erstellen
 
 - Pfeile von Emojis übernehmen (bspw. bei Select City)
 
+- "line-height" anschauen
