@@ -57,7 +57,6 @@ body {
     text-shadow: 0 0 0 rgb(133, 125, 242);
     padding-right: .4rem;
 }
-
 .location {
     font-weight: bold;
     display: flex;
@@ -72,7 +71,6 @@ body {
     text-shadow: 0 0 0 rgb(133, 125, 242);
     padding-right: .4rem;
 }
-
 .select_city_arrowhead {
     padding-left: .4rem;
     color: rgb(133, 125, 242);
@@ -178,7 +176,13 @@ body {
     flex-direction: row;
     justify-content: space-between;
 }
-.form_row {
+.name_form_column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 48%;
+}
+.form_column {
     display: flex;
     flex-direction: column;
 }
@@ -186,6 +190,7 @@ body {
     padding: .6rem;
     border-radius: .4rem;
     border: solid rgb(230, 230, 230) 1px;
+    font-family: 'Roboto', sans-serif;
 }
 .form_label {
     padding-top: .8rem;
@@ -218,17 +223,21 @@ body {
     width: 100%;
     background-color: white;
     font-size: 140%;
+}
+.footer_event {
     position: absolute;
     bottom: 0;
 }
 .about_contact {
+    width: 30%;
     display: flex;
     flex-direction: row;
-    padding-left: 6rem;
-    padding-right: 6rem;
+    justify-content: space-evenly;
+    padding-left: 0;
+    padding-right: 0;
 }
 .contact {
-    padding-left: 4rem;
+    padding-left: 0;
 }
 .socialmedia {
     display: flex;
@@ -260,7 +269,42 @@ body {
 .form_input_event {
     width: 40%;
 }
-@media screen and (max-width: 667px) {
+textarea {
+    resize: none;
+    font-family: 'Roboto', sans-serif;
+}
+.content_margin {
+    margin-bottom: 2rem;
+}
+@media only screen and (max-width:1200px) {
+    .content {
+        padding-top: 2rem;
+        width: 80%;
+    }
+    .footer {
+        font-size: 100%;
+        height: 12vh;
+        flex-direction: row;
+    }
+    .about_contact {
+        width: 30%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .socialmedia_link {
+        padding-left: 0;
+    }
+    .socialmedia {
+        width: 50%;
+        justify-content: space-evenly;
+        padding-right: 0;
+        margin-left: auto;
+    }
+}
+@media only screen and (max-width:500px) {
     .content {
         padding-top: 2rem;
         width: 90%;
@@ -280,6 +324,9 @@ body {
     .profile_img {
         display: none;
     }
+    .sing_in {
+        display: none;
+    }
     .header_without_logo {
         padding-top: 0;
     }
@@ -291,5 +338,36 @@ body {
     }
     .content_form {
         padding: 1.2rem;
+    }
+    .footer {
+        font-size: 100%;
+        height: 14vh;
+        flex-direction: column;
+    }
+    .about_contact {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding-left: 0;
+        padding-right: 0;
+        margin-bottom: 2rem;
+        margin-top: 1rem;
+    }
+    .socialmedia_link {
+        padding-left: 0;
+    }
+    .socialmedia {
+        width: 100%;
+        justify-content: space-evenly;
+        padding-right: 0;
+        margin-left: 0;
+    }
+    .form_input_event {
+        width: 33%;
+    }
+    .footer_event {
+        position: static;
+        bottom: 0;
     }
 }
