@@ -251,7 +251,7 @@ body {
 }
 .event_time {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
     height: auto;
 }
@@ -261,14 +261,8 @@ body {
     justify-content: space-between;
     width: 100%;
 }
-.event_start {
-    width: 48%;
-}
-.event_end {
-    width: 48%;
-}
 .form_input_event {
-    width: 40%;
+    width: 45%;
 }
 textarea {
     resize: none;
@@ -300,6 +294,10 @@ textarea {
         justify-content: space-evenly;
         padding-right: 0;
         margin-left: auto;
+    }
+    .footer_event {
+        position: static;
+        bottom: 0;
     }
 }
 @media only screen and (max-width:500px) {
@@ -362,10 +360,6 @@ textarea {
         margin-left: 0;
     }
     .form_input_event {
-        width: 33%;
-    }
-    .footer_event {
-        position: static;
-        bottom: 0;
+        width: 40%;
     }
 }
