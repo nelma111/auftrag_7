@@ -37,30 +37,30 @@ body {
     align-items: center;
     border-bottom: solid rgb(235, 235, 235) 2px;
 }
-.header_without_logo {
+.header_right {
     display: flex;
     flex-direction: row;
     padding-top: .8rem;
 }
-.header_logo {
+.header_left {
     font-size: 140%;
     font-weight: bold;
 }
-.header_select_city {
+.header_right_sc_div {
     font-weight: bold;
     display: flex;
     flex-direction: row;
     padding-right: 1rem;
     padding-top: .4rem;
 }
-.header_select_city_text::before {
+.header_right_sc_div_txt::before {
 	content: "📍";
 	font-style: normal;
 	color: transparent;  
     text-shadow: 0 0 0 rgb(133, 125, 242);
     padding-right: .4rem;
 }
-.header_select_city_text::after {
+.header_right_sc_div_txt::after {
 	content: "🔻";
 	font-style: normal;
 	color: transparent;  
@@ -90,11 +90,11 @@ body {
     padding-right: .4rem;
     padding-left: .4rem;
 }
-.header_create_event {
+.header_right_ce_div {
     padding-left: 1rem;
     padding-right: 1rem;
 }
-.header_create_event_btn {
+.header_right_ce_btn {
     background-color: rgb(133, 125, 242);
     text-decoration:none;
     border: none;
@@ -123,7 +123,7 @@ body {
     text-shadow: 0 0 0 rgb(133, 125, 242);
     padding-right: .4rem;
 }
-#header_profile_pic {
+#header_right_profile_img {
     width: 2.2rem;
     border-radius: 2rem;
 }
@@ -330,16 +330,16 @@ textarea {
     .submit_btn {
         font-size: 90%;
     }
-    .header_create_event {
+    .header_right_ce_div {
         display: none;
     }
-    .header_profile_img {
+    .header_right_pimg_div {
         display: none;
     }
     .header_sing_in {
         display: none;
     }
-    .header_without_logo {
+    .header_right {
         padding-top: 0;
     }
     .form_input_btn {
