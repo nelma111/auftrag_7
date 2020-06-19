@@ -68,21 +68,21 @@ body {
     padding-right: .4rem;
     padding-left: .4rem;
 }
-.header_location {
+.header_right_loc_txt {
     font-weight: bold;
     display: flex;
     flex-direction: row;
     padding-right: 1rem;
     padding-top: .4rem;
 }
-.header_location::before {
+.header_right_loc_txt::before {
 	content: "📍";
 	font-style: normal;
 	color: transparent;  
     text-shadow: 0 0 0 rgb(133, 125, 242);
     padding-right: .4rem;
 }
-.header_location::after {
+.header_right_loc_txt::after {
 	content: "🔻";
 	font-style: normal;
 	color: transparent;  
@@ -241,10 +241,6 @@ body {
     background-color: white;
     font-size: 140%;
 }
-.footer_event {
-    position: absolute;
-    bottom: 0;
-}
 .about_contact {
     width: 30%;
     display: flex;
@@ -256,7 +252,7 @@ body {
 .contact {
     padding-left: 0;
 }
-.socialmedia {
+.footer_socialmedia {
     display: flex;
     flex-direction: row;
     padding-right: 6rem;
@@ -305,7 +301,7 @@ textarea {
     .socialmedia_link {
         padding-left: 0;
     }
-    .socialmedia {
+    .footer_socialmedia {
         width: 50%;
         justify-content: space-evenly;
         padding-right: 0;
@@ -369,7 +365,7 @@ textarea {
     .socialmedia_link {
         padding-left: 0;
     }
-    .socialmedia {
+    .footer_socialmedia {
         width: 100%;
         justify-content: space-evenly;
         padding-right: 0;
