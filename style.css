@@ -104,7 +104,7 @@ body {
     padding-right: .8rem;
     border-radius: .4rem;
 }
-.header_sign_in_btn {
+.header_right_sign_in_btn {
     background-color: white;
     text-decoration:none;
     border: none;
@@ -116,7 +116,7 @@ body {
     border-radius: .4rem;
     margin-left: 1rem;
 }
-.header_sign_in_btn::before {
+.header_right_sign_in_btn::before {
 	content: "👨‍💼";
 	font-style: normal;
 	color: transparent;  
@@ -313,18 +313,8 @@ textarea {
     }
 }
 @media only screen and (max-width:500px) {
-    .content {
-        padding-top: 2rem;
-        width: 90%;
-    }
-    .content_title {
-        padding-bottom: 1.6rem;
-    }
     .header {
         font-size: 80%;
-    }
-    .submit_btn {
-        font-size: 90%;
     }
     .header_right_ce_div {
         display: none;
@@ -332,11 +322,18 @@ textarea {
     .header_right_pimg_div {
         display: none;
     }
-    .header_sing_in {
+    .header_right_sing_in {
         display: none;
     }
     .header_right {
         padding-top: 0;
+    }
+    .content {
+        padding-top: 2rem;
+        width: 90%;
+    }
+    .content_title {
+        padding-bottom: 1.6rem;
     }
     .form_input_btn {
         font-size: 90%;
@@ -346,6 +343,9 @@ textarea {
     }
     .content_form {
         padding: 1.2rem;
+    }
+    .submit_btn {
+        font-size: 90%;
     }
     .footer {
         font-size: 100%;
